@@ -214,7 +214,7 @@ def draw_leg(surface, x, y, width, height, color):
 
 # выполняю функции
                         
-draw_here(screen, 200, 350, 150, 300, (255, 255, 255))
+draw_here(screen, 200, 350, 200, 300, (255, 0, 255))
 
 
 # конец блока рисования
