@@ -35,14 +35,27 @@ def new_ball():
 
     '''
     global x, y, r # глобальные переменные
-    x = randint(100, 1100)
-    y = randint(100, 900)
+    x = randint(10, 390)
+    y = randint(10, 390)
     r = randint(10, 100)
     color = colors[randint(0, 5)]
     circle(screen, color, (x, y), r)
 
 
 def click(event):
+    '''
+    функция показывает координаты центра круга и его радиус
+
+    Parameters
+    ----------
+    event : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
     print(x, y, r)
     
 
@@ -80,25 +93,11 @@ while not finished: # пока не завершилось делать:
             click(event)
             print('Click -----------------', x, y, r)
             compare()
-#            if event.x == 0:
-#                print('Попал')
-#            else:
-#                print('Промазал')
-                
-
-
+        
     new_ball() # новый круг
     pygame.display.update() # обновить окно
-#    screen.fill(black) # залить всё окно одним цветом
-    click(event)
+    screen.fill(black) # залить всё окно одним цветом
+#    click(event)
     
 
 pygame.quit()
-
-
-
-
-
-
-#a = randint(0, 10)
-#print(a)
